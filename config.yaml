@@ -1,0 +1,27 @@
+
+
+num_classes: 3
+texture_input_dim: 8
+
+# Data paths
+merged_images_dir: "C:\\Users\\Harshini.ND\\PycharmProjects\\featureIntegration\\dataset\\merged_dataset"
+normal_images_dir: "C:\\Users\\Harshini.ND\\PycharmProjects\\featureIntegration\\dataset\\Normal"
+annotations_file: "C:\\Users\\Harshini.ND\\PycharmProjects\\featureIntegration\\dataset\\merged_dataset\\merged_labels.json"
+texture_features_file:  "C:\\Users\\Harshini.ND\\PycharmProjects\\featureIntegration\\dataset\\final_features.xlsx"
+
+# Training parameters
+batch_size: 4
+phase1_epochs: 20
+phase2_epochs: 30
+
+# Learning rates
+texture_lr: 0.001
+image_lr: 0.0001
+combined_lr: 0.0005
+
+# Optimizer parameters
+weight_decay: 0.0001
+
+# Scheduler parameters
+scheduler_step_size: 10
+scheduler_gamma: 0.1
